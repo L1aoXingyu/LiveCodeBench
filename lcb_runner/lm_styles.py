@@ -651,14 +651,14 @@ LanguageModelList: list[LanguageModel] = [
     ),
     LanguageModel(
         "deepseek-ai/DeepSeek-R1-O48K/clysmqouu004i134stwdcys7s",
-        "DeepSeek-R1 (SiliconFlow API)",
+        "DeepSeek-R1-SiliconFlow-API",
         LMStyle.SiliconFlow,
         datetime(2025, 1, 20),
         link="https://huggingface.co/deepseek-ai/DeepSeek-R1",
     ),
     LanguageModel(
         "deepseek-r1-250120",
-        "DeepSeek-R1 (VolcEngine API)",
+        "DeepSeek-R1-VolcEngine-API",
         LMStyle.VolcEngine,
         datetime(2025, 1, 20),
         link="https://huggingface.co/deepseek-ai/DeepSeek-R1",
