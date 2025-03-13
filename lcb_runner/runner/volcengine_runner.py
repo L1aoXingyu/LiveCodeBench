@@ -9,7 +9,7 @@ except ImportError:
 from lcb_runner.runner.siliconflow_runner import SiliconFlowRunner
 
 
-class VolcesRunner(SiliconFlowRunner):
+class VolcEngineRunner(SiliconFlowRunner):
     client = OpenAI(
         api_key=os.getenv("API_KEY"),
         base_url="https://ark.cn-beijing.volces.com/api/v3/",
