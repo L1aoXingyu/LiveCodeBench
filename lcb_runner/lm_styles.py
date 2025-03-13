@@ -29,6 +29,8 @@ class LMStyle(Enum):
     LLaMa3 = "LLaMa3"
 
     DeepSeekR1 = "DeepSeekR1"
+    SiliconFlow = "SiliconFlow"
+    VolcEngine = "VolcEngine"
 
 
 @dataclass
@@ -646,6 +648,20 @@ LanguageModelList: list[LanguageModel] = [
         LMStyle.DeepSeekR1,
         datetime(2025, 1, 20),
         link="https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Llama-70B",
+    ),
+    LanguageModel(
+        "deepseek-ai/DeepSeek-R1-O48K/clysmqouu004i134stwdcys7s",
+        "DeepSeek-R1-SiliconFlow-API",
+        LMStyle.SiliconFlow,
+        datetime(2025, 1, 20),
+        link="https://huggingface.co/deepseek-ai/DeepSeek-R1",
+    ),
+    LanguageModel(
+        "deepseek-r1-250120",
+        "DeepSeek-R1-VolcEngine-API",
+        LMStyle.VolcEngine,
+        datetime(2025, 1, 20),
+        link="https://huggingface.co/deepseek-ai/DeepSeek-R1",
     ),
 ]
 

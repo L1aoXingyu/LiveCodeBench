@@ -42,6 +42,14 @@ def build_runner(args, model: LanguageModel):
         from lcb_runner.runner.fireworks_runner import FireWorksRunner
 
         return FireWorksRunner(args, model)
+    if model.model_style == LMStyle.SiliconFlow:
+        from lcb_runner.runner.siliconflow_runner import SiliconFlowRunner
+
+        return SiliconFlowRunner(args, model)
+    if model.model_style == LMStyle.VolcEngine:
+        from lcb_runner.runner.volcengine_runner import VolcEngineRunner
+
+        return VolcEngineRunner(args, model)
     elif model.model_style in []:
         raise NotImplementedError(
             f"Runner for language model style {model.model_style} not implemented yet"
